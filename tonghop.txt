@@ -1,0 +1,7 @@
+site: https://danang.codegym.vn/2023/09/26/tong-hop-10-bo-de-thi-javascript-hay-nhat-2023/
+
+document.write(""); -> hiententuoi_deso1.html
+Tuoi = prompt("Bạn hãy nhập vào Tuổi : ", 20); -> hiententuoi_deso1.html
+onclick = "alert ('Welcome to JavaScript');" -> nutnhan_textbox_deso2+3.html
+document.getElementById('myName').value -> laygiatricua1phantu_deso4.html
+function HienThi(){} -> khaibaoham_deso5.html
