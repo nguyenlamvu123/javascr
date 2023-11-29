@@ -1,0 +1,21 @@
+<HTML>
+
+<BODY>
+
+<script language="JavaScript">
+
+var D = new Date();
+var namsinh, dgetyear;
+dgetyear = D.getYear();
+do {
+	namsinh = prompt("nhập năm sinh", "");
+} while (
+	parseInt(namsinh) > dgetyear
+);
+alert("số tuổi: " + (dgetyear - namsinh));
+
+</script>
+
+</BODY>
+
+</HTML>

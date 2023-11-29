@@ -1,0 +1,23 @@
+<HTML>
+
+<BODY>
+
+<script language="JavaScript">
+var soluong, x;
+var DS = new Array(10);
+
+soluong = prompt('nhập số lượng', 3);
+
+for (i = 0; i < soluong; i++) {
+	DS[i] = prompt("tên:" , "");
+}
+DS.sort();
+for (x in DS) {
+	document.write(DS[x]);
+	document.write("<br>");
+}
+</script>
+
+</BODY>
+
+</HTML>
