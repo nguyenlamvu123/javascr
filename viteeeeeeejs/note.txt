@@ -1,0 +1,14 @@
+site: https://vitejs.dev/guide/
+site: https://vntalking.com/vitejs-la-gi-mot-frontend-build-tool-toc-do.html
+site: https://radixweb.com/blog/guide-to-install-vite-js
+	Vite là một công cụ phục vụ cho môi trường phát triển dự án, không phải là một framework
+npm create vite@latest  # bắt đầu một dự án sử dụng ViteJS, tự động xử lý một file cấu hình có tên là vite.config.js trong thư mục gốc của dự án
+	npm create vite@latest gettingstarted -- --template vue
+	npm init vite
+cd gettingstarted
+npm install  # chạy dự án
+npm run dev  # chạy dự án
+									npx vite
+									npx vite --help
+npm run build  # đóng gói và đưa ứng dụng ra thị trường
+
