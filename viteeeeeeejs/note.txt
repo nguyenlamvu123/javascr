@@ -1,14 +1,52 @@
+site:https://viblo.asia/p/module-bundler-la-gi-parcel-mot-bundler-noi-khong-voi-config-gDVK2o9vZLj
+	javascript <--> typescript
+	HTML <--> React
+	CSS <--> SASS
+
+site: https://github.com/nodejs/help/wiki/Installation
 site: https://vitejs.dev/guide/
 site: https://vntalking.com/vitejs-la-gi-mot-frontend-build-tool-toc-do.html
-site: https://radixweb.com/blog/guide-to-install-vite-js
 	Vite là một công cụ phục vụ cho môi trường phát triển dự án, không phải là một framework
+site: https://radixweb.com/blog/vite-js-latest-front-end-development-tool
+      https://radixweb.com/blog/guide-to-install-vite-js
+	Hot Module Replacement (HMR): changes the source code in the browser without refreshing F5
+	Bare Module Resolving: support `import { createApp } from ‘vue’`
+	On-demand Compilation
+	Configuration Option:can extend the default  with vite.config.js or vite.config.ts file	
+	
+	npx create-vite-app
+
 npm create vite@latest  # bắt đầu một dự án sử dụng ViteJS, tự động xử lý một file cấu hình có tên là vite.config.js trong thư mục gốc của dự án
+	yarn create @vitejs/app my-react-app --template react-ts
 	npm create vite@latest gettingstarted -- --template vue
 	npm init vite
 cd gettingstarted
-npm install  # chạy dự án
+npm install  # cài các phụ thuộc (install application dependency)
 npm run dev  # chạy dự án
 									npx vite
 									npx vite --help
+npm i --save vue-router@v4.0.0-alpha.11
 npm run build  # đóng gói và đưa ứng dụng ra thị trường
+
+site: https://positiwise.com/blog/how-to-install-vite-js-on-your-computer
+	Vue Router leads to establishing a connection between the browser’s URL and elements of Vue to ensure smooth rendering over the App.
+#################################################################################################
+index.html gọi đến src/main.js trong thẻ script có type="module"
+src/main.js gọi đến ./App.vue
+./App.vue gọi đến ./components/HelloWorld.vue dưới tên HelloWorld, truyền tham số msg="Vite + Vue"
+#################################################################################################
+site: https://vuejs.org/guide/essentials/application.html
+	very Vue application starts by creating a new application instance with the createApp function: `import { createApp } from 'vue'` <- ./src/main.js
+	import the root component App from a single-file component: `import App from './App.vue'` <- ./src/main.js
+	An application instance won't render anything until its .mount() method is called
+site: https://vuejs.org/guide/essentials/reactivity-fundamentals.html
+	const count = ref(0) -> { value: 0 }: `import { ref } from 'vue'` <- ./components/HelloWorld.vue
+	import { nextTick } from 'vue'
+	import { reactive } from 'vue'
+site: https://vuejs.org/guide/essentials/computed.html
+	import { reactive, computed } from 'vue'
+site: https://vuejs.org/guide/essentials/conditional.html
+	v-else element must immediately follow a v-if or a v-else-if
+	v-show, v-for
+	
 
