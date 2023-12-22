@@ -1,0 +1,42 @@
+{% block title %}{% endblock %}
+{% block main %}
+{% if mymembers %}
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type='text/javascript'>
+    var mymembers = {{ mymembers|safe }};
+  </script>
+
+  <div id="app">
+    [[message]]
+
+    <ul>
+      <li v-for="x in mymembers">
+        <a v-bind:href="x.mota">[[ x.tencuahang ]]: [[ x.mota ]]</a> <button v-on:click="greet(x.tencuahang)">hey</button>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    var app = new Vue({
+      delimiters: ['[[', ']]'],
+      el: '#app',
+      data: {
+          message: 'Hello Vue!',
+          mymembers: mymembers,
+      },
+      methods: {
+          greet: function(name) {
+              console.log('Hello from ' + name + '!')
+          }
+      }
+    });
+  </script>
+<!--<ul>
+  {% for x in mymembers %}
+    <li>{{ x.tencuahang }} <br> {{ x.mota }}</li>
+  {% endfor %}
+</ul>-->
+{% else %}
+  <p>No store available.</p>
+{% endif %}
+{% endblock %}
