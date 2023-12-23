@@ -1,5 +1,12 @@
+{% block title %}{% endblock %}
+{% block main %}
+{% if mymembers %}
 <ul>
   {% for x in mymembers %}
     <li>{{ x.tencuahang }} <br> {{ x.mota }}</li>
   {% endfor %}
 </ul>
+{% else %}
+  <p>No store available.</p>
+{% endif %}
+{% endblock %}

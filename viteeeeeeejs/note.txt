@@ -32,6 +32,7 @@ site: https://positiwise.com/blog/how-to-install-vite-js-on-your-computer
 	Vue Router leads to establishing a connection between the browser’s URL and elements of Vue to ensure smooth rendering over the App.
 #################################################################################################
 index.html gọi đến src/main.js trong thẻ script có type="module"
+index.html gọi đến createApp(App).mount('#app') (trong src/main.js) trong thẻ div có id="app"
 src/main.js gọi đến ./App.vue
 ./App.vue gọi đến ./components/HelloWorld.vue dưới tên HelloWorld, truyền tham số msg="Vite + Vue"
 #################################################################################################
@@ -48,5 +49,4 @@ site: https://vuejs.org/guide/essentials/computed.html
 site: https://vuejs.org/guide/essentials/conditional.html
 	v-else element must immediately follow a v-if or a v-else-if
 	v-show, v-for
-	
 
