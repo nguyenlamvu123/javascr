@@ -1,1 +1,2 @@
 https://vsupalov.com/vue-js-in-django-template/
+https://github.com/MrBin99/django-vite

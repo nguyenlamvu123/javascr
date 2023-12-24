@@ -1,10 +1,8 @@
-{% block title %}{% endblock %}
-{% block main %}
-{% if mymembers %}
+{% extends "base.html" %}
+{% block content %}
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script type='text/javascript'>
-    var mymembers = {{ mymembers|safe }};
-  </script>
+  <script type='text/javascript'>var mymembers = {{ mymembers|safe }};</script>
+{% if mymembers %}
 
   <div id="app">
     [[message]]
@@ -21,7 +19,7 @@
       delimiters: ['[[', ']]'],
       el: '#app',
       data: {
-          message: 'Hello Vue!',
+          message: 'Web đặt cơm!',
           mymembers: mymembers,
       },
       methods: {
@@ -38,5 +36,6 @@
 </ul>-->
 {% else %}
   <p>No store available.</p>
+</div>
 {% endif %}
 {% endblock %}
