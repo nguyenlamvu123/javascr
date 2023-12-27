@@ -1,1 +1,3 @@
-https://vsupalov.com/vue-js-in-django-template/
+https://gist.github.com/lucianoratamero/7fc9737d24229ea9219f0987272896a2
+https://www.youtube.com/watch?v=FCyYIVfDkhY
+
